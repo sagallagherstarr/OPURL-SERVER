@@ -1,0 +1,7 @@
+{% extends "client/template_base_html5.jinja2.html" %}
+{% block title %}client{% endblock %}
+{% if header %}
+{% block header %}{{ header }}{% endblock %}
+{% endif %}
+
+{% block message %}{{ message }}{% endblock %}

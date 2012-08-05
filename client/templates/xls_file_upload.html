@@ -1,0 +1,9 @@
+{% extends "client/template_base_html5.jinja2.html" %}
+{% block title %}Upload Excel (.xls) File{% endblock %}
+{% block header %}Local XLS File Upload Utility<br />{% endblock %}
+{% block main %}
+  <div role="main">
+  Local XLS File Upload Utility<br />
+  {{ form() | safe }}
+  </div>
+{% endblock %}

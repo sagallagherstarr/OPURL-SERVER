@@ -1,0 +1,29 @@
+﻿{% extends "client/template_base_html5.jinja2.html" %}
+{% block title %}Grid-based File upload setter{% endblock %}
+
+{% block main %}
+
+
+This spreadsheet has {{ in_grid[0].len() }} columns<br />
+
+<table>
+<tbody>
+<tr>
+<th>&nbsp;</th> {# blank upper-left corner cell #}
+{% for col in range(in_grid[0].len()) %}
+<th>Col {{ col + 1 }}</th>
+{% endfor %}
+</tr>
+{% for rownum, row in enumerate(in_grid) %}
+<tr>
+<th>Row {{ rownum + 1 }}</th>
+{% for col in row %}
+<td>{{ col }}</td>
+{% endfor %}
+</tr>
+
+{% endfor %}
+</tbody>
+</table>
+
+{% endblock %}
