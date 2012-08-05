@@ -1,4 +1,4 @@
-application: OPURL-SERVER
+application: opurl-server
 version: 1
 runtime: python27
 api_version: 1
@@ -36,6 +36,8 @@ handlers:
 
 libraries:
 - name: jinja2
+  version: latest
+- name: PIL
   version: latest
 
 skip_files: |
